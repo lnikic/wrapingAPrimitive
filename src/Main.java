@@ -37,6 +37,18 @@ public class Main {
             System.out.println("Added on position " + r.position + " value " + r.value);
         }
         System.out.print(list);
+//      converting string to primitives using wrappers
+        String s = "2";
+        int x = Integer.parseInt(s);
+        double d = Double.parseDouble("420.24");
+        boolean b = Boolean.perseBoolean("True");
+        String t = "two";
+        int y = Integer.perseInt(t);
+//      converting primitives to strings
+        double d = 42.5;
+        String doubleString = "" + d;
+        String doubleString1 = Double.toString(d);
+        String doubleString2 = String.valueOf(d);
     }
 
     public static Respond autoboxing(int x) {
