@@ -41,14 +41,14 @@ public class Main {
         String s = "2";
         int x = Integer.parseInt(s);
         double d = Double.parseDouble("420.24");
-        boolean b = Boolean.perseBoolean("True");
+        boolean b = Boolean.parseBoolean("True");
         String t = "two";
-        int y = Integer.perseInt(t);
+        int y = Integer.parseInt(t);
 //      converting primitives to strings
-        double d = 42.5;
-        String doubleString = "" + d;
-        String doubleString1 = Double.toString(d);
-        String doubleString2 = String.valueOf(d);
+        double dd = 42.5;
+        String doubleString = "" + dd;
+        String doubleString1 = Double.toString(dd);
+        String doubleString2 = String.valueOf(dd);
     }
 
     public static Respond autoboxing(int x) {
