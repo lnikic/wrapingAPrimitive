@@ -55,6 +55,12 @@ public class Main {
         long legalButSilly = 10_0000_0000;
         String s1 = String.format("%,d" , easierToRead);
         System.out.println(s1);
+        String str = String.format("I have %,.2f, bugs to fix,", 476578.09876);
+        System.out.println(str);
+        int one = 20456654;
+        double two = 100567890.248907;
+        String str1 = String.format("The rank is %,d out of %,.2f", one , two);
+        System.out.println(str1);
     }
 
     public static Respond autoboxing(int x) {
