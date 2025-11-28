@@ -36,19 +36,25 @@ public class Main {
             Respond r = autoboxing(numbers[n]);
             System.out.println("Added on position " + r.position + " value " + r.value);
         }
-        System.out.print(list);
+        System.out.println(list);
 //      converting string to primitives using wrappers
         String s = "2";
         int x = Integer.parseInt(s);
         double d = Double.parseDouble("420.24");
         boolean b = Boolean.parseBoolean("True");
         String t = "two";
-        int y = Integer.parseInt(t);
+//        int y = Integer.parseInt(t);
 //      converting primitives to strings
         double dd = 42.5;
         String doubleString = "" + dd;
         String doubleString1 = Double.toString(dd);
         String doubleString2 = String.valueOf(dd);
+//        numbers formating
+        long hardToRead = 1000000000;
+        long easierToRead = 1_000_000_000;
+        long legalButSilly = 10_0000_0000;
+        String s1 = String.format("%,d" , easierToRead);
+        System.out.println(s1);
     }
 
     public static Respond autoboxing(int x) {
